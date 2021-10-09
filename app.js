@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.post('/file-upload', upload.single('file'), (req, res) => {
+    console.log(req.file);
+    console.log(req.body);
+});
+
 app.listen(3001, () => {
     console.log('express is listening http://localhost:3001');
 });
