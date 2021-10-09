@@ -1,0 +1,35 @@
+<main>
+    <h1>Multer Intro</h1>
+    <section>
+        <article>
+            Just a small demonstration of how to use Multer.js for multipart/form-data.
+        </article>
+        <div>
+            <form action="post" enctype="multipart/form-data">
+                <fieldset>
+                    <div>
+                        <label for="firstName">First Name (required)</label>
+                        <input type="text" name="firstName" id="firstName" required aria-required="true" />
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name (required)</label>
+                        <input type="text" name="lastName" id="lastName" required aria-required="true"/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="fileName">Unique filename</label>
+                        <input type="text" name="fileName" id="fileName" />
+                    </div>
+                    <div>
+                        <label for="yourFile">File: </label>
+                        <input type="file" name="file" id="yourFile" />
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
