@@ -1,35 +1,106 @@
 <main>
-    <h1>Multer Intro</h1>
-    <section>
-        <article>
-            Just a small demonstration of how to use Multer.js for multipart/form-data.
-        </article>
+  <h1>File Uploading</h1>
+  <section>
+    <div>
+      <form action="post" enctype="multipart/form-data" id="withoutMulter">
+        <fieldset>
+          <div>
+            <label for="fName">First Name (required)</label>
+            <input
+              type="text"
+              name="fName"
+              id="fName"
+              required
+              autocomplete="given-name"
+              aria-required="true"
+            />
+          </div>
+          <div>
+            <label for="lName">Last Name (required)</label>
+            <input
+              type="text"
+              name="lName"
+              id="lName"
+              required
+              autocomplete="family-name"
+              aria-required="true"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <label for="file_name">Unique filename</label>
+            <input type="text" name="file_name" id="file_name" />
+          </div>
+          <div>
+            <label for="your_file">File: </label>
+            <input type="file" name="file1" id="your_file" />
+          </div>
+        </fieldset>
         <div>
-            <form action="post" enctype="multipart/form-data" id="form">
-                <fieldset>
-                    <div>
-                        <label for="firstName">First Name (required)</label>
-                        <input type="text" name="firstName" id="firstName" required aria-required="true" />
-                    </div>
-                    <div>
-                        <label for="lastName">Last Name (required)</label>
-                        <input type="text" name="lastName" id="lastName" required aria-required="true"/>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <label for="fileName">Unique filename</label>
-                        <input type="text" name="fileName" id="fileName" />
-                    </div>
-                    <div>
-                        <label for="yourFile">File: </label>
-                        <input type="file" name="file" id="yourFile" />
-                    </div>
-                </fieldset>
-                <div>
-                    <input type="submit" value="Submit" />
-                </div>
-            </form>
+          <input type="submit" value="Submit" />
         </div>
-    </section>
+      </form>
+    </div>
+    <div>
+      <h2>Drop Zone</h2>
+      <div id="dropZone">
+        <p>
+          Drag file to drop zone...
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <article>
+        <h2>File uploads with Multer</h2>
+        <p>
+          Just a small demonstration of how to use Multer.js for
+          multipart/form-data.
+        </p>
+      </article>
+    </div>
+    <div>
+      <form action="post" enctype="multipart/form-data" id="multerForm">
+        <fieldset>
+          <div>
+            <label for="firstName">First Name (required)</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              required
+              autocomplete="given-name"
+              aria-required="true"
+            />
+          </div>
+          <div>
+            <label for="lastName">Last Name (required)</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              required
+              autocomplete="family-name"
+              aria-required="true"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <label for="fileName">Unique filename</label>
+            <input type="text" name="fileName" id="fileName" />
+          </div>
+          <div>
+            <label for="yourFile">File: </label>
+            <input type="file" name="file" id="yourFile" />
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </section>
 </main>
