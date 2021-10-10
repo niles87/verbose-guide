@@ -32,12 +32,12 @@ nav > ul {
 }
 
 a[role="button"] {
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    background: #0066ff;
-    color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background: #0066ff;
+  color: white;
 }
 
 ul li {
@@ -51,14 +51,29 @@ a img {
 }
 
 main {
-    width: 90vw;
-    margin: 0 auto;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
 }
 
 section {
-    height: calc(100vh - 80px);
-    width: 100%;
-    display: flex;
+  height: calc(90vh - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sr-only {
@@ -68,4 +83,19 @@ section {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+#dropZone {
+  width: 100%;
+  height: 200px;
+  border: 5px groove #ced4da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #eeeeee;
+}
+
+#dropZone p {
+  text-align: center;
 }
