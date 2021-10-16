@@ -18,21 +18,22 @@ nav {
 }
 
 nav > div {
-  width: 25%;
   height: 100%;
 }
 
 nav > ul {
   display: flex;
-  width: 25%;
   height: 100%;
   list-style: none;
   justify-content: flex-end;
   align-items: center;
 }
 
-a[role="button"] {
+nav a {
   text-decoration: none;
+}
+
+a[role="button"] {
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
@@ -45,14 +46,17 @@ ul li {
   padding: 10px;
 }
 
-a img {
+a .logo {
   width: 100%;
   height: 100%;
+  font-size: 50px;
+  color: #222222;
 }
 
 main {
   width: 90vw;
   margin: 0 auto;
+  background-color: #eeeeee;
 }
 
 main h1 {
@@ -86,14 +90,15 @@ section > div {
 }
 
 #dropZone {
-  width: 100%;
+  width: 75%;
   height: 200px;
-  border: 5px groove #ced4da;
+  border: 5px groove #b8bec4;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #eeeeee;
+  background-color: #c9c9c9;
+  margin: 0 auto;
 }
 
 #dropZone p {
